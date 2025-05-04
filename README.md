@@ -1,9 +1,5 @@
 # Gaussian Splat Segmentation Methods
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-A collection of segmentation approaches for Gaussian splats, focusing on point cloud processing and classification for 3D scenes.
-
 ## Overview
 
 This repository contains multiple approaches to segment Gaussian splat representations, providing both 2D and 3D segmentation techniques. Each method is maintained in its own branch to keep implementations clean and separate.
