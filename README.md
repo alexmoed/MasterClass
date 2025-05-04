@@ -10,7 +10,6 @@ SAM2 Video enables the segmentation of image sequences by propagating selections
 
 - **Interactive Refinement**: Correct specific frames where segmentation fails
 - **High-Resolution Support**: Works well with 6000×9000px images
-- **Resource Efficient**: Uses substantial RAM (56.2 GB) but minimal VRAM (5 GB)
 - **Object Consistency**: Rarely confuses unrelated objects or selects them randomly
 - **Occlusion Handling**: Effectively tracks objects that are partially visible or cut off
 - **Multi-Object Support**: Multiple object selections can be combined into a binary mask
