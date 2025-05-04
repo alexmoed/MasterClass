@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains multiple approaches to segment Gaussian splat representations, providing both 2D and 3D segmentation techniques. Each method is maintained in its own branch to keep implementations clean and separate.
+This repository contains multiple approaches to segment Gaussian splat representations, providing both 2D and 3D segmentation techniques. Each method is maintained in its own branch to keep implementations organised.
 
 ## Branch Structure
 
