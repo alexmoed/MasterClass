@@ -16,7 +16,7 @@ SAM2 Video enables the segmentation of image sequences by propagating selections
 
 ## Postshot Export System
 
-This implementation features a specialized export system designed specifically for Postshot compatibility. The export process:
+This implementation features a specialised export system designed specifically for Postshot compatibility. The export process:
 
 1. Automatically creates versioned output directories (v001, v002, etc.)
 2. Combines multiple object masks into a single binary mask
