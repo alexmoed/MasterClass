@@ -1,6 +1,4 @@
-# MasterClass
-
-SAM2 + MatAnyone
+# SAM2 + MatAnyone
 This pipeline creates a seamless integration between SAM2 mask prediction and MatAnyone for mask propagation across video frames. The system automatically passes masks and paths between components for efficient video object segmentation.
 Pipeline Overview
 
