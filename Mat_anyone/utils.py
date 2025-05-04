@@ -1,3 +1,12 @@
+
+"""
+@code MatAnyone video mask propagation implementation
+
+Modified from:-
+Yang, H. et al. (March 2025). MatAnyone: Universal Video Matting [online].
+[Accessed 2025-05-04]. Available from: "https://matanyone.com/about".
+"""
+
 import os
 import cv2
 import random
