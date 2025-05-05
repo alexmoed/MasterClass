@@ -22,7 +22,7 @@ This script handles the initial processing of point cloud data and object detect
 - Exports prediction data to a text file in the format:
 
 - bbox_0=Bbox(label,x,y,z,rotation,dx,dy,dz)
-- 
+  
 - label: Object category (chair, sofa, table, etc.)
 - x,y,z: Center coordinates of the bounding box
 - rotation: Rotation around the vertical axis
