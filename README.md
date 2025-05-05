@@ -22,7 +22,7 @@ This script handles the initial processing of point cloud data and object detect
 - Exports prediction data to a text file in the format:
 
 - bbox_0=Bbox(label,x,y,z,rotation,dx,dy,dz)
-- Where:
+- 
 - label: Object category (chair, sofa, table, etc.)
 - x,y,z: Center coordinates of the bounding box
 - rotation: Rotation around the vertical axis
@@ -57,7 +57,8 @@ A sample model is located at: `pcd/scene0061_00.ply`
 - **Orientation Requirements**: The orientation of input point clouds is critical for accurate results. Your point clouds must match the orientation of example files provided in the SpatialLM repository. This typically means:
 - Up direction should be along the Z-axis
 - Floor should be parallel to the XY plane
-- Room layout should match the examples provided by SpatialLM (typically with walls parallel to X and Y axes)
+- Room layout should match the examples provided by SpatialLM (typically with walls parallel to X and Y axes) See example data
+
 - SpatialLM-Qwen-0.5B generally performs better for furniture recognition
 - SpatialLM-Llama-1B performs better on architectural elements
 - Results may vary between runs due to the stochastic nature of the prediction process
