@@ -1,3 +1,17 @@
+
+
+# @brief Train a semantic segmentation model for 3D Gaussian Splats
+# Modified from :-
+# Yanx27 (2019). PointNet_Pointnet2_pytorch [online].
+# [Accessed 2024]. Available from: "https://github.com/yanx27/Pointnet_Pointnet2_pytorch"
+# Based on research from:
+# Jurski, K. (2024). Semantic 3D segmentation of 3D Gaussian Splats: Assessing existing
+# point cloud segmentation techniques on semantic segmentation of synthetic 3D Gaussian
+# Splats scenes. Bachelor's Thesis, Delft University of Technology.
+# Extended implementation: "https://github.com/karol-202/direct-3dgs-segmentation"
+     
+
+
 import json
 import math
 import os
