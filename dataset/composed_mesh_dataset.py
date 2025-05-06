@@ -1,3 +1,12 @@
+
+# Based on research from:
+# Jurski, K. (2024). Semantic 3D segmentation of 3D Gaussian Splats: Assessing existing
+# point cloud segmentation techniques on semantic segmentation of synthetic 3D Gaussian
+# Splats scenes. Bachelor's Thesis, Delft University of Technology.
+# Extended implementation: "https://github.com/karol-202/direct-3dgs-segmentation"
+     
+
+
 from datasets.base_mesh_dataset import BaseMeshDataset
 from data_utils.utils import split_into_random_subsets
 from data_utils.scene_composer import compose_scene
