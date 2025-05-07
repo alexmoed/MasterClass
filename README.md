@@ -63,3 +63,6 @@ A sample model is located at: `pcd/scene0061_00.ply`
 - SpatialLM-Llama-1B performs better on architectural elements
 - Results may vary between runs due to the stochastic nature of the prediction process
 - Processing a typical room scene requires approximately 12-15GB of VRAM with default settings
+
+#Test dataset: 
+https://drive.google.com/file/d/1gqn8mt2rC6o_Z3PVH7jODeeQrg_svDec/view?usp=sharing
