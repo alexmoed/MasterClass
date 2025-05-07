@@ -11,7 +11,7 @@ My implementation focuses on making Jurski's approach more practical and robust,
 
 ## Demo
 
-[![Play Video](https://storage.googleapis.com/anmstorage/Master_class/houdini_screen_capture_with_play.png)](https://storage.googleapis.com/anmstorage/Master_class/point_net_results.mp4)
+[![Play Video](https://storage.googleapis.com/anmstorage/Master_class/houdini_screen_capture.png)](https://storage.googleapis.com/anmstorage/Master_class/point_net_results.mp4)
 
 Here are the results of this method in houdini (click on image to play video)
 
