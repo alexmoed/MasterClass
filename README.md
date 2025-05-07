@@ -8,6 +8,9 @@ SpatialLM utilizes large language models to analyze and understand 3D point clou
 
 The workflow is divided into two complementary scripts that perform different stages of the processing pipeline:
 
+## Demo
+
+
 ## Scripts
 
 ### 1. spatialLM_predictions_Bounding_box_creator.ipynb
