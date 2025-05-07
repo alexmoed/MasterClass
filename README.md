@@ -14,10 +14,10 @@ SAM2 Video enables the segmentation of image sequences by propagating selections
 - **Occlusion Handling**: Effectively tracks objects that are partially visible or cut off
 - **Multi-Object Support**: Multiple object selections can be combined into a binary mask
   
-## Dataset
+## Dataset:
 https://storage.googleapis.com/anmstorage/Master_class/Chair_splat_dataset.zip
 
-## Sam2Video Example results 
+## Sam2Video Example results:
 
 ## Postshot Export System
 
