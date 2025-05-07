@@ -9,7 +9,7 @@ SpatialLM utilizes large language models to analyze and understand 3D point clou
 The workflow is divided into two complementary scripts that perform different stages of the processing pipeline:
 
 ## Demo
-[![Video Title](Media/spatial_LM_screenshot.PNG)](Media/SpatialLM_turntable_render.mp4)
+![SpatialLM Turntable](https://storage.googleapis.com/anmstorage/Master_class/SpatialLM_turntable_render_1.gif)
 
 
 ## Scripts
