@@ -31,16 +31,20 @@ This implementation features a specialised export system designed specifically f
 ## Postshot Mask Processing
 
 # POSTSHOT MASK EXPORTING
-#
-# 1. COMBINE MASKS: Merge all object masks into one binary mask
-#    - WHITE (255) = Subject
-#    - BLACK (0) = Background
-#
-# 2. ADD AS ALPHA CHANNEL: Attach mask to original image as alpha channel
-#    - Preserves full RGB data
-#    - No premultiplication
-#    - No actual transparency applied
-#
-# 3. SAVE AS PNG: Contains original image with mask as alpha channel
-#    (Alpha is not premultiplied or set for transparency)
-#    - Standard format for Postshot
+
+ 1. COMBINE MASKS: Merge all object masks into one binary mask
+   - WHITE (255) = Subject
+   - BLACK (0) = Background
+
+ 2. ADD AS ALPHA CHANNEL: Attach mask to original image as alpha channel
+    - Preserves full RGB data
+    - No premultiplication
+    - No actual transparency applied
+
+ 3. SAVE AS PNG: Contains original image with mask as alpha channel
+    (Alpha is not premultiplied or set for transparency)
+    - Standard format for Postshot
+   
+  # POSTSHOT Results 
+
+  
