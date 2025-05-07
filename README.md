@@ -17,7 +17,7 @@ SAM2 Video enables the segmentation of image sequences by propagating selections
 ## Dataset
 https://storage.googleapis.com/anmstorage/Master_class/Chair_splat_dataset.zip
 
-## Example results 
+## Sam2Video Example results 
 
 ## Postshot Export System
 
