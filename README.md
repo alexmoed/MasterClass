@@ -8,9 +8,10 @@ This repository implements Jurski's method which uses PointNet++ for 3D semantic
 
 My implementation focuses on making Jurski's approach more practical and robust, addressing several challenges encountered during testing.
 
-### Demo
 
-## 🎬 [▶ Watch PointNet++ Results](https://storage.googleapis.com/anmstorage/Master_class/point_net_results.mp4)
+## Demo
+
+[![Play Video](https://storage.googleapis.com/anmstorage/Master_class/houdini_screen_capture_with_play.png)](https://storage.googleapis.com/anmstorage/Master_class/point_net_results.mp4)
 
 Here are the results of this method in houdini (click on image to play video)
 
