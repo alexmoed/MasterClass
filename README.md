@@ -13,6 +13,9 @@ SAM2 Video enables the segmentation of image sequences by propagating selections
 - **Object Consistency**: Rarely confuses unrelated objects or selects them randomly
 - **Occlusion Handling**: Effectively tracks objects that are partially visible or cut off
 - **Multi-Object Support**: Multiple object selections can be combined into a binary mask
+  
+# Dataset
+https://storage.googleapis.com/anmstorage/Master_class/Chair_splat_dataset.zip
 
 ## Postshot Export System
 
