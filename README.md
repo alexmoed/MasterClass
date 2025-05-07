@@ -10,7 +10,7 @@ My implementation focuses on making Jurski's approach more practical and robust,
 
 ### Demo
 
-[![Click to watch the video](https://storage.googleapis.com/anmstorage/Master_class/houdini_screen_capture.PNG)](https://storage.googleapis.com/anmstorage/Master_class/point_net_results.mp4)
+## 🎬 [▶ Watch PointNet++ Results](https://storage.googleapis.com/anmstorage/Master_class/point_net_results.mp4)
 
 Here are the results of this method in houdini (click on image to play video)
 
