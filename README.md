@@ -30,7 +30,7 @@ This implementation features a specialised export system designed specifically f
 
 ## Postshot Mask Processing
 
-# POSTSHOT MASK EXPORTING
+## POSTSHOT MASK EXPORTING
 
  1. COMBINE MASKS: Merge all object masks into one binary mask
    - WHITE (255) = Subject
@@ -45,6 +45,6 @@ This implementation features a specialised export system designed specifically f
     (Alpha is not premultiplied or set for transparency)
     - Standard format for Postshot
    
-  # POSTSHOT Results 
+  ## POSTSHOT Results 
 
   
