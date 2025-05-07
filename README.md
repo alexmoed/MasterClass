@@ -8,3 +8,6 @@ MatAnyone propagates the initial mask through all subsequent frames
 Output is saved with consistent naming and organisation in the source folder 
 
 This integration eliminates manual steps between mask generation and propagation, creating a streamlined workflow for video segmentation tasks. At the time of starting this method, it was not available and it was suggested to use a SAM2 demo online, download the files, and upload to MatAnyone. I streamlined this process.
+
+
+#Test footage: 
