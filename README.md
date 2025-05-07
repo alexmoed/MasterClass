@@ -8,6 +8,11 @@ This repository implements Jurski's method which uses PointNet++ for 3D semantic
 
 My implementation focuses on making Jurski's approach more practical and robust, addressing several challenges encountered during testing.
 
+##Results
+[![Watch the video](https://img.shields.io/badge/Watch--Video-PointNet++-blue?logo=playstation)](https://storage.googleapis.com/anmstorage/Master_class/point_net_results.mp4)
+Here are the results of this method in houdini
+
+
 ## Implementation Details
 
 In implementing Jurski's method, I've added several practical enhancements:
