@@ -17,7 +17,7 @@ SAM2 Video enables the segmentation of image sequences by propagating selections
 # Dataset
 https://storage.googleapis.com/anmstorage/Master_class/Chair_splat_dataset.zip
 
-# Example results 
+## Example results 
 
 ## Postshot Export System
 
@@ -28,9 +28,8 @@ This implementation features a specialised export system designed specifically f
 3. Adds the binary mask as an alpha channel to the original image WITHOUT premultiplication
 4. Exports as PNG files with the alpha channel in Postshot's required format
 
-### Postshot Mask Processing
+## Postshot Mask Processing
 
-```python
 # POSTSHOT MASK EXPORTING
 #
 # 1. COMBINE MASKS: Merge all object masks into one binary mask
