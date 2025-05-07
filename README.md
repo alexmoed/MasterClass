@@ -19,7 +19,9 @@ https://storage.googleapis.com/anmstorage/Master_class/Chair_splat_dataset.zip
 
 ## Sam2Video Example results:
 https://storage.googleapis.com/anmstorage/Master_class/sam2.gif
-Animated gif of the example output of sam 2:
+
+Animated gif of the example output of sam 2
+
 
 ## Postshot Export System
 
