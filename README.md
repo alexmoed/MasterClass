@@ -11,6 +11,8 @@ The workflow is divided into two complementary scripts that perform different st
 ## Demo
 
 [![Video Title](Media/spatial_LM_screenshot.PNG)](https://storage.googleapis.com/anmstorage/Master_class/SpatialLM_turntable_render.mp4)
+
+click image to view video
 ## Scripts
 
 ### 1. spatialLM_predictions_Bounding_box_creator.ipynb
