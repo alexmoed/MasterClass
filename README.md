@@ -23,15 +23,14 @@ https://storage.googleapis.com/anmstorage/Master_class/sam2.gif
 Animated gif example output 
 
 
-## Postshot Export System
+## Added functionality: Postshot Export System
 
 This implementation features a specialised export system designed specifically for Postshot compatibility. The export process:
 
 1. Automatically creates versioned output directories (v001, v002, etc.)
 2. Combines multiple object masks into a single binary mask
 3. Adds the binary mask as an alpha channel to the original image WITHOUT premultiplication
-4. Exports as PNG files with the alpha channel in Postshot's required format
-
+4. Exports as PNG files with the alpha channel unmultiplied, designed for Postshot
 ## Postshot Mask Processing
 
 ## POSTSHOT MASK EXPORTING
