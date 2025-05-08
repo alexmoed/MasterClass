@@ -20,13 +20,9 @@ https://storage.googleapis.com/anmstorage/Master_class/Chair_splat_dataset.zip
 ## Sam2Video Example results:
 https://storage.googleapis.com/anmstorage/Master_class/sam2.gif
 
-Animated gif example output 
+Video example (click on image to view results)
 
-
-## Added functionality
-
-My implementation features a specialised export system designed for Postshot compatibility. 
-## Custom Pre-Processing Implementation for PostShot
+### Custom mask export implementation designed for PostShot:
 
 1. Automatically creates versioned output directories (v001, v002, etc.)
 2. Combines multiple object masks into a single binary mask
