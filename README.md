@@ -12,3 +12,8 @@ This integration eliminates manual steps between mask generation and propagation
 
 # Dataset:
 https://storage.googleapis.com/anmstorage/Master_class/Chair_splat_dataset.zip
+# Example broken output video: 
+
+[![MatAnyone Fail Thumbnail](https://storage.googleapis.com/anmstorage/Master_class/matanyone_fail.0122.png)](https://storage.googleapis.com/anmstorage/Master_class/matanyone_fail.mp4)
+
+(Click on photo to watch video)
