@@ -23,30 +23,22 @@ https://storage.googleapis.com/anmstorage/Master_class/sam2.gif
 Animated gif example output 
 
 
-## Added functionality: Postshot Export System
+## Added functionality
 
-This implementation features a specialised export system designed specifically for Postshot compatibility. The export process:
+My implementation features a specialised export system designed for Postshot compatibility. 
+## Custom Pre-Processing Implementation for PostShot
 
 1. Automatically creates versioned output directories (v001, v002, etc.)
 2. Combines multiple object masks into a single binary mask
-3. Adds the binary mask as an alpha channel to the original image WITHOUT premultiplication
-4. Exports as PNG files with the alpha channel unmultiplied, designed for Postshot
-## Postshot Mask Processing
-
-## POSTSHOT MASK EXPORTING
-
- 1. COMBINE MASKS: Merge all object masks into one binary mask
    - WHITE (255) = Subject
    - BLACK (0) = Background
+3. Adds the binary mask as an alpha channel to the original image
+   - Preserves full RGB data
+   - No premultiplication
+   - No actual transparency applied
+4. Exports as PNG files containing original image with mask as alpha channel
+   (Alpha is not premultiplied or set for transparency)
 
- 2. ADD AS ALPHA CHANNEL: Attach mask to original image as alpha channel
-    - Preserves full RGB data
-    - No premultiplication
-    - No actual transparency applied
-
- 3. SAVE AS PNG: Contains original image with mask as alpha channel
-    (Alpha is not premultiplied or set for transparency)
-   
   ## POSTSHOT Results 
 
   ![3D Gaussian Splatting Chair Rendering](PostShot_3DGS_results/chair_3DGS.png)
