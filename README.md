@@ -22,7 +22,7 @@ https://storage.googleapis.com/anmstorage/Master_class/sam2.gif
 
 Video example (click on image to view results)
 
-### Custom mask export implementation designed for PostShot:
+## Custom mask export implementation designed for PostShot:
 
 1. Automatically creates versioned output directories (v001, v002, etc.)
 2. Combines multiple object masks into a single binary mask
