@@ -52,3 +52,4 @@ This implementation features a specialised export system designed specifically f
   ## POSTSHOT Results 
 
   ![3D Gaussian Splatting Chair Rendering](PostShot_3DGS_results/chair_3DGS.png)
+3DGS created from matted sam2video image sequences using Postshot. 
