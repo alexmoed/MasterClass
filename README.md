@@ -47,7 +47,6 @@ This implementation features a specialised export system designed specifically f
 
  3. SAVE AS PNG: Contains original image with mask as alpha channel
     (Alpha is not premultiplied or set for transparency)
-    - Standard format for Postshot
    
   ## POSTSHOT Results 
 
