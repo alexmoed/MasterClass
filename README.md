@@ -46,6 +46,8 @@ Key advantages of this approach include:
 - Some manual intervention required on problematic frames
 - Occasional difficulties with thin elements like chair legs
 - High RAM requirements
+##Demo
+[![Chair Segmentation Demo](https://storage.googleapis.com/anmstorage/Master_class/Thumbnail_chair.PNG)](https://storage.googleapis.com/anmstorage/Master_class/chair_demo_video.mp4)
 
   ## POSTSHOT Results 
 
