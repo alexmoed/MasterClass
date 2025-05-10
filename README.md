@@ -17,7 +17,7 @@ This repository contains multiple approaches to segment Gaussian splat represent
    https://github.com/alexmoed/MasterClass/tree/2D-Sam2Video
 
 - **2D-MatAnyone**: MatAnyone mask-agnostic segmentation approach
-  https://github.com/alexmoed/MasterClass/tree/2D-MatAnyone
+   https://github.com/alexmoed/MasterClass/tree/2D-MatAnyone
 
 - **3D-SpatialLM**: SpatialLM-based segmentation using large language models for 3D understanding
    https://github.com/alexmoed/MasterClass/tree/3D-SpatialLM
