@@ -9,14 +9,12 @@ SpatialLM utilizes large language models to analyze and understand 3D point clou
 The workflow is divided into two complementary scripts that perform different stages of the processing pipeline:
 
 ## Demo
-
 [![Video Title](Media/spatial_LM_screenshot.PNG)](https://storage.googleapis.com/anmstorage/Master_class/SpatialLM_turntable_render.mp4)
-
 click image to view video
+
 ## Scripts
 
 ### 1. spatialLM_predictions_Bounding_box_creator.ipynb
-
 **Run this script FIRST**
 
 This script handles the initial processing of point cloud data and object detection:
@@ -25,16 +23,24 @@ This script handles the initial processing of point cloud data and object detect
 - Generates predictions for objects in the scene
 - Creates bounding boxes around detected objects
 - Exports prediction data to a text file in the format:
-
-- bbox_0=Bbox(label,x,y,z,rotation,dx,dy,dz)
-  
+ - bbox_0=Bbox(label,x,y,z,rotation,dx,dy,dz)
+ 
+Parameters explained:
 - label: Object category (chair, sofa, table, etc.)
 - x,y,z: Center coordinates of the bounding box
 - rotation: Rotation around the vertical axis
 - dx,dy,dz: Dimensions of the bounding box
 
-### 2. Export_Classified_pointcloud_SpatialLM.ipynb
+The script includes extensive error handling and visualization options to help debug potential orientation issues. It also provides mechanisms to adjust beam settings and temperature to optimize detection quality based on your specific scene. The implementation allows for multiple sequences to be processed, generating additional predictions that can capture objects missed in initial passes.
 
+Key features of the first script:
+- Utilizes undocumented parameters discovered during research to improve detection quality
+- Includes visualization tools to confirm correct bounding box placement
+- Implements custom prompt engineering to target specific object types
+- Provides detailed console output during processing for monitoring model confidence
+- Supports batch processing of multiple point clouds
+
+### 2. Export_Classified_pointcloud_SpatialLM.ipynb
 **Run this script SECOND**
 
 This script converts the bounding box text file into classified point clouds:
@@ -60,14 +66,13 @@ A sample model is located at: `pcd/scene0061_00.ply`
 ## Important Notes
 
 - **Orientation Requirements**: The orientation of input point clouds is critical for accurate results. Your point clouds must match the orientation of example files provided in the SpatialLM repository. This typically means:
-- Up direction should be along the Z-axis
-- Floor should be parallel to the XY plane
-- Room layout should match the examples provided by SpatialLM (typically with walls parallel to X and Y axes) See example data
-
+ - Up direction should be along the Z-axis
+ - Floor should be parallel to the XY plane
+ - Room layout should match the examples provided by SpatialLM (typically with walls parallel to X and Y axes) See example data
 - SpatialLM-Qwen-0.5B generally performs better for furniture recognition
 - SpatialLM-Llama-1B performs better on architectural elements
 - Results may vary between runs due to the stochastic nature of the prediction process
 - Processing a typical room scene requires approximately 12-15GB of VRAM with default settings
 
-#Test dataset: 
+## Test dataset
 https://drive.google.com/file/d/1gqn8mt2rC6o_Z3PVH7jODeeQrg_svDec/view?usp=sharing
