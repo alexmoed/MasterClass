@@ -8,9 +8,6 @@ SpatialLM utilizes large language models to analyze and understand 3D point clou
 
 The workflow is divided into two complementary scripts that perform different stages of the processing pipeline:
 
-## Demo
-[![Video Title](Media/spatial_LM_screenshot.PNG)](https://storage.googleapis.com/anmstorage/Master_class/SpatialLM_turntable_render.mp4)
-click image to view video
 
 ## Scripts
 
@@ -74,5 +71,8 @@ A sample model is located at: `pcd/scene0061_00.ply`
 - Results may vary between runs due to the stochastic nature of the prediction process
 - Processing a typical room scene requires approximately 12-15GB of VRAM with default settings
 
+## Demo
+[![Video Title](Media/spatial_LM_screenshot.PNG)](https://storage.googleapis.com/anmstorage/Master_class/SpatialLM_turntable_render.mp4)
+click image to view video
 ## Test dataset
 https://drive.google.com/file/d/1gqn8mt2rC6o_Z3PVH7jODeeQrg_svDec/view?usp=sharing
