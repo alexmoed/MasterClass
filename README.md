@@ -33,7 +33,7 @@ Key advantages of this approach include:
 5. Review results and make manual corrections where needed
 6. Export as alpha masks for Postshot
 
-## Export Functionality The implementation includes automated export functionality that: 
+## Export Functionality:
 - Takes the generated segmentation masks and combines them with original images
 - Properly embeds masks as unpremultiplied alpha channels in PNG format
 - Places exported files in the input footage folder with a consistent naming convention
