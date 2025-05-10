@@ -47,9 +47,10 @@ Key advantages of this approach include:
 - Occasional difficulties with thin elements like chair legs
 - High RAM requirements
 
-  ## Demo
+## Demo
 [![Chair Segmentation Demo](https://storage.googleapis.com/anmstorage/Master_class/Thumbnail_chair.PNG)](https://storage.googleapis.com/anmstorage/Master_class/chair_demo_video.mp4)
 
+Click the image above to view a demo video showing the SAM2 Video segmentation and resulting Gaussian splat of a chair.RetryClaude can make mistakes. Please double-check responses.
   ## POSTSHOT Results 
 
   ![3D Gaussian Splatting Chair Rendering](PostShot_3DGS_results/chair_3DGS.png)
