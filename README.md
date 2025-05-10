@@ -28,12 +28,6 @@ In implementing Jurski's method, I've added several practical enhancements:
 4. **Training Improvements**: Implemented optimizations that accelerated training convergence, achieving 68% evaluation accuracy in just 30 epochs when including opacity features.
 
 
-
-## Requirements
-
-- Python 3.7+, PyTorch 1.8+, NumPy, Pandas, tqdm, TensorBoard
-- PyTorch3D (specific Meta repository version)
-
 ## Dataset:
 https://data.4tu.nl/datasets/3eabd3f5-d814-48be-bbff-b440f2d48a2b
 
