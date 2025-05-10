@@ -33,15 +33,13 @@ Key advantages of this approach include:
 5. Review results and make manual corrections where needed
 6. Export as alpha masks for Postshot
 
-## PostShot Integration
-
-The implementation includes specific export functionality for PostShot, enabling:
-
-- Alpha channel handling for proper mask integration
-- PNG export with consistent naming conventions
-- Compatible resolution settings (up to 6000×6000)
-- Support for MCMC model with up to 80,000 splats
-
+## Export Functionality The implementation includes automated export functionality that: 
+- Takes the generated segmentation masks and combines them with original images
+- Properly embeds masks as unpremultiplied alpha channels in PNG format
+- Places exported files in the input footage folder with a consistent naming convention
+- Creates files that can be directly imported into PostShot for Gaussian splat generation
+- Eliminates the need for manual compositing in external applications
+  
 ## Limitations
 
 - Consistency issues between multiple runs
@@ -54,3 +52,7 @@ The implementation includes specific export functionality for PostShot, enabling
   ![3D Gaussian Splatting Chair Rendering](PostShot_3DGS_results/chair_3DGS.png)
   
 3DGS created from matted sam2video image sequences using Postshot. 
+
+
+
+
