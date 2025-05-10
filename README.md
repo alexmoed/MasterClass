@@ -6,6 +6,12 @@ Implementation of PointNet++ for semantic segmentation of 3D Gaussian Splats, ba
 
 This repository implements Jurski's method which applies PointNet++ to semantic 3D segmentation of Gaussian splats. PointNet++ categorizes points using hierarchical feature learning, enabling direct classification of each individual point in the Gaussian splat cloud. The method assigns semantic labels (chair, table, sofa, etc.) to each point, rather than working with 2D projections. This point-level segmentation approach creates consistent results that aren't dependent on viewing angle, making it particularly valuable for scene manipulation and object isolation in 3D space.
 
+## Features
+
+- Semantic segmentation of 3D Gaussian Splat point clouds
+- Multi-attribute support (position, opacity, scale, rotation)
+- Checkpoint saving/loading and evaluation metrics
+- Visualization of segmentation results
 ## Demo
 
 [![Click to watch the video](https://storage.googleapis.com/anmstorage/Master_class/houdini_screen_capture.PNG)](https://storage.googleapis.com/anmstorage/Master_class/point_net_results.mp4)
@@ -21,12 +27,7 @@ In implementing Jurski's method, I've added several practical enhancements:
 3. **Visualization Pipeline**: At 50-epoch intervals (or a value you choose), the system generates PLY files showing segmentation results that can be viewed in standard 3D software.
 4. **Training Improvements**: Implemented optimizations that accelerated training convergence, achieving 68% evaluation accuracy in just 30 epochs when including opacity features.
 
-## Features
 
-- Semantic segmentation of 3D Gaussian Splat point clouds
-- Multi-attribute support (position, opacity, scale, rotation)
-- Checkpoint saving/loading and evaluation metrics
-- Visualization of segmentation results
 
 ## Requirements
 
