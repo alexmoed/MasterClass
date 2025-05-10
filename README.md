@@ -6,7 +6,7 @@ This repository contains multiple approaches to segment Gaussian splat represent
 
 ## Branch Structure
 
-Each method is contained in its own branch:
+**Each method is contained in its own branch:**
 
 - **main**: Overview and documentation
 
