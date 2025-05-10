@@ -19,9 +19,9 @@ While the pipeline itself functioned as designed, the underlying MatAnyone metho
 
 - **Poor Subject Performance**: Performed poorly on inanimate objects despite working well with human subjects
 - **Color Similarity Issues**: Struggled with objects sharing similar colors with backgrounds (e.g., sofas blending with floors)
-- **Camera Movement Problems**: Failed when camera movement introduced previously unobserved regions
+- **Occlusion problems**: Failed when camera movement introduced previously unobserved regions of a object
 - **Frame Rate Sensitivity**: Performed inconsistently depending on frame rates
-- **Resolution Constraints**: Required significant downscaling from 6K×9K to 2048×1080 due to VRAM limitations
+- **Resolution Constraints**: Required significant downscaling from 6K×9K to 2048×1088 due to VRAM limitations
 
 ### Frame Transposition Correction
 
