@@ -11,16 +11,16 @@ This repository contains multiple approaches to segment Gaussian splat represent
 - **main**: Overview and documentation
 
 - **3D-Pointnet++**: Implementation of PointNet++ classification approach
-- https://github.com/alexmoed/MasterClass/tree/3D-Pointnet%2B%2B
+  https://github.com/alexmoed/MasterClass/tree/3D-Pointnet%2B%2B
 
 - **2D-Sam2Video**: SAM2 video segmentation with mask propagation
-- https://github.com/alexmoed/MasterClass/tree/2D-Sam2Video
+   https://github.com/alexmoed/MasterClass/tree/2D-Sam2Video
 
 - **2D-MatAnyone**: MatAnyone mask-agnostic segmentation approach
-- https://github.com/alexmoed/MasterClass/tree/2D-MatAnyone
+  https://github.com/alexmoed/MasterClass/tree/2D-MatAnyone
 
 - **3D-SpatialLM**: SpatialLM-based segmentation using large language models for 3D understanding
-https://github.com/alexmoed/MasterClass/tree/3D-SpatialLM
+   https://github.com/alexmoed/MasterClass/tree/3D-SpatialLM
 
 
 Branches for each method: 
