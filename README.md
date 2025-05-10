@@ -45,7 +45,7 @@ Key advantages of this approach include:
 - Consistency issues between multiple runs
 - Some manual intervention required on problematic frames
 - Occasional difficulties with thin elements like chair legs
-- High RAM requirements (56.2GB)
+- High RAM requirements
 
   ## POSTSHOT Results 
 
