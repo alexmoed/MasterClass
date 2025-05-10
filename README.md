@@ -4,9 +4,7 @@ Implementation of PointNet++ for semantic segmentation of 3D Gaussian Splats, ba
 
 ## Overview
 
-This repository implements Jurski's method which uses PointNet++ for 3D semantic segmentation of Gaussian Splats. Unlike approaches that rely on 2D projections, this method works directly with 3D data for view-independent results. As described in Jurski's thesis, the approach treats Gaussian splats as "more sophisticated point clouds" and leverages PointNet++'s hierarchical feature learning for point-level classification.
-
-My implementation focuses on making Jurski's approach more practical and robust, addressing several challenges encountered during testing.
+This repository implements Jurski's method which applies PointNet++ to semantic 3D segmentation of Gaussian splats. PointNet++ categorizes points using hierarchical feature learning, enabling direct classification of each individual point in the Gaussian splat cloud. The method assigns semantic labels (chair, table, sofa, etc.) to each point, rather than working with 2D projections. This point-level segmentation approach creates consistent results that aren't dependent on viewing angle, making it particularly valuable for scene manipulation and object isolation in 3D space.
 
 ## Demo
 
@@ -38,4 +36,4 @@ In implementing Jurski's method, I've added several practical enhancements:
 ## Dataset:
 https://data.4tu.nl/datasets/3eabd3f5-d814-48be-bbff-b440f2d48a2b
 
-Do not use Download all files! Download each catagory seperatly and place in the dataset folder.
+Do not use Download all files! Download each category separately and place in the dataset folder.
