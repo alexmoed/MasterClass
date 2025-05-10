@@ -1,29 +1,58 @@
-## SAM2-MatAnyone Integration Pipeline
+# SAM2 Video Segmentation for Gaussian Splats
 
-This pipeline creates an integration between SAM2 mask prediction and MatAnyone for mask propagation across video frames. The system automatically passes masks and paths between components for video object segmentation. At the time of starting this method, it was not available and it was suggested to use a SAM2 demo online, download the files, and upload to MatAnyone. I streamlined this process.
+This branch implements segmentation using Meta's SAM2 Video model to create masks for Gaussian splat source images. It also has specialised export functionality for Postshot.
 
-### Pipeline Overview
+## Overview
 
-1. SAM2 generates an initial segmentation mask for the first frame
-2. Frames are resized to 2048×1080 due to VRAM limitations while maintaining quality
-3. MatAnyone propagates the initial mask through all subsequent frames
-4. Output is saved with consistent naming and organisation in the source folder
+SAM2 Video enables the segmentation of image sequences by propagating selections across frames while allowing for interactive refinement. This approach is particularly effective for creating masks with complex boundaries and handling occlusion.
 
-### Implementation Details
+## Key Features
 
-My implementation successfully integrated the two systems, automating what was previously a multi-step manual process. The technical integration worked as intended, with masks being properly passed between components and results being saved with consistent organization.
+- **Interactive Refinement**: Correct specific frames where segmentation fails
+- **High-Resolution Support**: Works well with 6000×9000px images
+- **Object Consistency**: Rarely confuses unrelated objects or selects them randomly
+- **Occlusion Handling**: Effectively tracks objects that are partially visible or cut off
+- **Multi-Object Support**: Multiple object selections can be combined into a binary mask
 
-### Significant Limitations
+## Implementation Details
 
-While the pipeline itself functioned as designed, the underlying MatAnyone method had severe limitations for our use case:
+The implementation uses SAM2's `propagate-in-video` function which maintains memory of previous frames. Users can place click markers to specify objects for segmentation, which can be configured with a numpy array specifying XY coordinates of markers and labels (1 for inclusion, 0 for exclusion).
 
-- **Poor Subject Performance**: Performed poorly on inanimate objects despite working well with human subjects
-- **Color Similarity Issues**: Struggled with objects sharing similar colors with backgrounds (e.g., sofas blending with floors)
-- **Camera Movement Problems**: Failed when camera movement introduced previously unobserved regions
-- **Frame Rate Sensitivity**: Performed inconsistently depending on frame rates
-- **Resolution Constraints**: Required significant downscaling from 6K×9K to 2048×1080 due to VRAM limitations
+Key advantages of this approach include:
 
-Despite the pipeline functioning correctly from a technical integration standpoint, the underlying approach proved unsuitable for our Gaussian splat preparation needs. Testing showed the SAM2Video method to be a more effective alternative for our specific requirements.
+- Memory-efficient processing (5GB VRAM, 56.2GB RAM)
+- Occlusion prediction capability for handling hidden object portions
+- Effective tracking across panoramic image sequences
+- Simple correction workflow for problematic frames
+
+## Usage Instructions
+
+1. Prepare image sequences in a folder structure
+2. Run the script with path to the image folder
+3. Place markers on objects in the first frame
+4. Process the sequence with automatic propagation
+5. Review results and make manual corrections where needed
+6. Export as alpha masks for Postshot
+
+## PostShot Integration
+
+The implementation includes specific export functionality for PostShot, enabling:
+
+- Alpha channel handling for proper mask integration
+- PNG export with consistent naming conventions
+- Compatible resolution settings (up to 6000×6000)
+- Support for MCMC model with up to 80,000 splats
+
+## Limitations
+
+- Consistency issues between multiple runs
+- Some manual intervention required on problematic frames
+- Occasional difficulties with thin elements like chair legs
+- High RAM requirements (56.2GB)
+
+## Examples
+
+See the research document for comparisons between this method and alternatives, particularly MatAnyone. Testing demonstrated that SAM2Video handled propagating segmentation across frames with more precise results, especially for partially visible objects and occlusion scenarios.
 
 # Dataset:
 https://storage.googleapis.com/anmstorage/Master_class/Chair_splat_dataset.zip
