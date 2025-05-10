@@ -13,27 +13,42 @@ SAM2 Video enables the segmentation of image sequences by propagating selections
 - **Object Consistency**: Rarely confuses unrelated objects or selects them randomly
 - **Occlusion Handling**: Effectively tracks objects that are partially visible or cut off
 - **Multi-Object Support**: Multiple object selections can be combined into a binary mask
-  
-## Dataset:
-https://storage.googleapis.com/anmstorage/Master_class/Chair_splat_dataset.zip
 
-## Sam2Video Example results:
-[![Chair Thumbnail](https://storage.googleapis.com/anmstorage/Master_class/Thumbnail_chair.PNG)](https://storage.googleapis.com/anmstorage/Master_class/chair_demo_video.mp4)
+## Implementation Details
 
-Video example (click on image to view results)
+The implementation uses SAM2's `propagate-in-video` function which maintains memory of previous frames. Users can place click markers to specify objects for segmentation, which can be configured with a numpy array specifying XY coordinates of markers and labels (1 for inclusion, 0 for exclusion).
 
-## Custom mask export script designed for PostShot:
+Key advantages of this approach include:
 
-1. Automatically creates versioned output directories (v001, v002, etc.)
-2. Combines multiple object masks into a single binary mask
-   - WHITE (255) = Subject
-   - BLACK (0) = Background
-3. Adds the binary mask as an alpha channel to the original image
-   - Preserves full RGB data
-   - No premultiplication
-   - No actual transparency applied
-4. Exports as PNG files containing original image with mask as alpha channel
-   (Alpha is not premultiplied or set for transparency)
+- Memory-efficient processing (5GB VRAM, 56.2GB RAM)
+- Occlusion prediction capability for handling hidden object portions
+- Effective tracking across panoramic image sequences
+- Simple correction workflow for problematic frames
+
+## Usage Instructions
+
+1. Prepare image sequences in a folder structure
+2. Run the script with path to the image folder
+3. Place markers on objects in the first frame
+4. Process the sequence with automatic propagation
+5. Review results and make manual corrections where needed
+6. Export as alpha masks for Postshot
+
+## PostShot Integration
+
+The implementation includes specific export functionality for PostShot, enabling:
+
+- Alpha channel handling for proper mask integration
+- PNG export with consistent naming conventions
+- Compatible resolution settings (up to 6000×6000)
+- Support for MCMC model with up to 80,000 splats
+
+## Limitations
+
+- Consistency issues between multiple runs
+- Some manual intervention required on problematic frames
+- Occasional difficulties with thin elements like chair legs
+- High RAM requirements (56.2GB)
 
   ## POSTSHOT Results 
 
