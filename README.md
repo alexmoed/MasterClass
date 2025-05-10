@@ -28,14 +28,9 @@ Parameters explained:
 - rotation: Rotation around the vertical axis
 - dx,dy,dz: Dimensions of the bounding box
 
-The script includes extensive error handling and visualization options to help debug potential orientation issues. It also provides mechanisms to adjust beam settings and temperature to optimize detection quality based on your specific scene. The implementation allows for multiple sequences to be processed, generating additional predictions that can capture objects missed in initial passes.
-
 Key features of the first script:
 - Utilizes undocumented parameters discovered during research to improve detection quality
 - Includes visualization tools to confirm correct bounding box placement
-- Implements custom prompt engineering to target specific object types
-- Provides detailed console output during processing for monitoring model confidence
-- Supports batch processing of multiple point clouds
 
 ### 2. Export_Classified_pointcloud_SpatialLM.ipynb
 **Run this script SECOND**
