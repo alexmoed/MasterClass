@@ -23,10 +23,6 @@ While the pipeline itself functioned as designed, the underlying MatAnyone metho
 - **Frame Rate Sensitivity**: Performed inconsistently depending on frame rates
 - **Resolution Constraints**: Required significant downscaling from 6K×9K to 2048×1080 due to VRAM limitations
 
-### Frame Transposition Correction
-
-The implementation included solutions for orientation inconsistencies where frames appeared differently rotated or flipped between different visualization tools (MatPlotLib, Windows Photo Viewer, Nuke) - a critical issue causing mask misalignment with source footage.
-
 Despite the pipeline functioning correctly from a technical integration standpoint, the underlying approach proved unsuitable for our Gaussian splat preparation needs. Testing showed the SAM2Video method to be a more effective alternative for our specific requirements.
 
 # Dataset:
