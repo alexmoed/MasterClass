@@ -1,14 +1,33 @@
-# SAM2 + MatAnyone
-This pipeline creates a seamless integration between SAM2 mask prediction and MatAnyone for mask propagation across video frames. The system automatically passes masks and paths between components for efficient video object segmentation.
-Pipeline Overview
+## SAM2-MatAnyone Integration Pipeline
 
-SAM2 generates an initial segmentation mask for the first frame
-Frames are resized to 2048×1080 due to VRAM limitations while maintaining quality
-MatAnyone propagates the initial mask through all subsequent frames
-Output is saved with consistent naming and organisation in the source folder 
+This pipeline creates an integration between SAM2 mask prediction and MatAnyone for mask propagation across video frames. The system automatically passes masks and paths between components for video object segmentation. At the time of starting this method, it was not available and it was suggested to use a SAM2 demo online, download the files, and upload to MatAnyone. I streamlined this process.
 
-This integration eliminates manual steps between mask generation and propagation, creating a streamlined workflow for video segmentation tasks. At the time of starting this method, it was not available and it was suggested to use a SAM2 demo online, download the files, and upload to MatAnyone. I streamlined this process.
+### Pipeline Overview
 
+1. SAM2 generates an initial segmentation mask for the first frame
+2. Frames are resized to 2048×1080 due to VRAM limitations while maintaining quality
+3. MatAnyone propagates the initial mask through all subsequent frames
+4. Output is saved with consistent naming and organisation in the source folder
+
+### Implementation Details
+
+My implementation successfully integrated the two systems, automating what was previously a multi-step manual process. The technical integration worked as intended, with masks being properly passed between components and results being saved with consistent organization.
+
+### Significant Limitations
+
+While the pipeline itself functioned as designed, the underlying MatAnyone method had severe limitations for our use case:
+
+- **Poor Subject Performance**: Performed poorly on inanimate objects despite working well with human subjects
+- **Color Similarity Issues**: Struggled with objects sharing similar colors with backgrounds (e.g., sofas blending with floors)
+- **Camera Movement Problems**: Failed when camera movement introduced previously unobserved regions
+- **Frame Rate Sensitivity**: Performed inconsistently depending on frame rates
+- **Resolution Constraints**: Required significant downscaling from 6K×9K to 2048×1080 due to VRAM limitations
+
+### Frame Transposition Correction
+
+The implementation included solutions for orientation inconsistencies where frames appeared differently rotated or flipped between different visualization tools (MatPlotLib, Windows Photo Viewer, Nuke) - a critical issue causing mask misalignment with source footage.
+
+Despite the pipeline functioning correctly from a technical integration standpoint, the underlying approach proved unsuitable for our Gaussian splat preparation needs. Testing showed the SAM2Video method to be a more effective alternative for our specific requirements.
 
 # Dataset:
 https://storage.googleapis.com/anmstorage/Master_class/Chair_splat_dataset.zip
