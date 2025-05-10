@@ -119,13 +119,6 @@ This repository contains multiple approaches to segment Gaussian splat represent
 
 ## Usage Guidelines
 
-### General Workflow
-1. Select the appropriate branch based on your segmentation needs
-2. Follow branch-specific setup instructions
-3. Prepare input data according to method requirements
-4. Run segmentation process
-5. Post-process results as needed
-
 ### Method Selection Guide
 - For high-quality results with manual refinement capability: **2D-Sam2Video**
 - For fully automated processing of human subjects: **2D-MatAnyone**
