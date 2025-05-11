@@ -33,7 +33,6 @@ The implementation uses SAM2's `propagate-in-video` function which maintains mem
 - Consistency issues between multiple runs
 - Some manual intervention required on problematic frames
 - Occasional difficulties with thin elements like chair legs
-- High RAM requirements (56.2GB)
 
 ## Demo
 [![Chair Segmentation Demo](https://storage.googleapis.com/anmstorage/Master_class/Thumbnail_chair.PNG)](https://storage.googleapis.com/anmstorage/Master_class/chair_demo_video.mp4)
