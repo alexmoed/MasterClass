@@ -41,7 +41,7 @@ This script converts the bounding box text file into classified point clouds:
 - Uses Open3D's `get_point_indices_within_bounding_box` function to identify which points fall within each bounding box
 - Assigns classification attributes to points based on their containing bounding box
 - Creates a new point cloud with classification attributes
-- Exports the classified point cloud for visualization or further processing
+- Exports the classified point cloud as a PLY file for visualisation or further processing 
 - Supports filtering and segmentation by object class
 
 ## Parameters
@@ -53,7 +53,7 @@ The SpatialLM prediction can be adjusted using several parameters:
 
 ## Sample Data
 
-A sample model is located at: `pcd/scene0061_00.ply`
+A sample model is located at: `pcd/scene0061_00.ply` from Manycore.
 
 ## Important Notes
 
@@ -73,6 +73,13 @@ click image to view video
 ##Acknowledgments
 
 Based on SpatialLM GitHub repository
+@misc{spatiallm,
+  title        = {SpatialLM: Large Language Model for Spatial Understanding},
+  author       = {ManyCore Research Team},
+  howpublished = {\url{https://github.com/manycore-research/SpatialLM}},
+  year         = {2025}
+}
+
 Thanks to VisualSkies for providing test data
 
 
