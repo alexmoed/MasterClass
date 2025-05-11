@@ -27,7 +27,7 @@ In implementing Jurski's method, I've added several practical enhancements:
 2. **Parameter Optimization**: By adjusting configurations (increasing point count, expanding batch size from 8 to 32, and running 230 epochs), I achieved 87.54% accuracy, slightly exceeding the original 86.77% reported.
 3. **Visualization Pipeline**: At 50-epoch intervals (or a value you choose), the system generates PLY files showing segmentation results that can be viewed in standard 3D software.
 4. **Training Improvements**: Implemented optimizations that accelerated training convergence, achieving 68% evaluation accuracy in just 30 epochs when including opacity features.
-### Best Model Results 
+### Best Results 
 
 | **Section** | **Parameter** | **Value** |
 |-------------|---------------|-----------|
