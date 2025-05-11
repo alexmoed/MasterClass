@@ -70,7 +70,7 @@ A sample model is located at: `pcd/scene0061_00.ply` from Manycore.
 [![Video Title](Media/spatial_LM_screenshot.PNG)](https://storage.googleapis.com/anmstorage/Master_class/SpatialLM_turntable_render.mp4)
 click image to view video
 
-##Acknowledgments
+## Acknowledgments
 
 Based on SpatialLM GitHub repository
 https://github.com/manycore-research/SpatialLM
