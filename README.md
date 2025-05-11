@@ -73,12 +73,7 @@ click image to view video
 ##Acknowledgments
 
 Based on SpatialLM GitHub repository
-@misc{spatiallm,
-  title        = {SpatialLM: Large Language Model for Spatial Understanding},
-  author       = {ManyCore Research Team},
-  howpublished = {\url{https://github.com/manycore-research/SpatialLM}},
-  year         = {2025}
-}
+https://github.com/manycore-research/SpatialLM
 
 Thanks to VisualSkies for providing test data
 
