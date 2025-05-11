@@ -46,9 +46,9 @@ In implementing Jurski's method, I've added several practical enhancements:
 |  | LR Decay | 0.95 |
 |  | Sampling | uniform |
 |  | Extra Features | rotation_quat, rotation_matrix, scale, covariance, opacity |
-| **Best Epoch (118)** | Training Accuracy | 0.960970 |
+| **Best Epoch** | Training Accuracy | 0.960970 |
 |  | Training Loss | 0.133093 |
-|  | Eval Accuracy | **0.870204** |
+|  | Eval Accuracy | **0.875401** |
 |  | Eval Loss | 0.606984 |
 |  | Eval Avg Class IoU | 0.707422 |
 |  | Eval Avg Class Accuracy | 0.823969 |
