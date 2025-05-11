@@ -57,7 +57,7 @@ This repository contains multiple approaches to segment Gaussian splats, providi
 **Description**: Application of PointNet++ to semantic 3D segmentation of Gaussian splats at point level. Treats Gaussian splats as sophisticated point clouds and builds hierarchical feature learning.
 
 **Key Features**:
-- Achieved high accuracy (87.54% in our testing)
+- Achieved high accuracy (87.54% in my testing)
 - Works directly with 3D point cloud data on a point level
 - Effectively incorporates multiple feature types (position, opacity, scale, rotation)
 
