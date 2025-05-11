@@ -27,6 +27,41 @@ In implementing Jurski's method, I've added several practical enhancements:
 2. **Parameter Optimization**: By adjusting configurations (increasing point count, expanding batch size from 8 to 32, and running 230 epochs), I achieved 87.54% accuracy, slightly exceeding the original 86.77% reported.
 3. **Visualization Pipeline**: At 50-epoch intervals (or a value you choose), the system generates PLY files showing segmentation results that can be viewed in standard 3D software.
 4. **Training Improvements**: Implemented optimizations that accelerated training convergence, achieving 68% evaluation accuracy in just 30 epochs when including opacity features.
+### Best Model Results 
+
+| **Section** | **Parameter** | **Value** |
+|-------------|---------------|-----------|
+| **Dataset Info** | Dataset | 3DGS |
+|  | Training Samples | 999 |
+|  | Test Samples | 224 |
+|  | Classes | bathtub, bed, chair, desk, dresser, monitor, night_stand, sofa, table, toilet |
+| **Training Setup** | Model | pointnet2_sem_seg |
+|  | Batch Size | 32 |
+|  | Epochs | 250 |
+|  | Learning Rate | 0.003 |
+|  | Optimizer | Adam |
+|  | Weight Decay | 1e-5 |
+|  | NPoints | 12288 |
+|  | LR Step Size | 5 |
+|  | LR Decay | 0.95 |
+|  | Sampling | uniform |
+|  | Extra Features | rotation_quat, rotation_matrix, scale, covariance, opacity |
+| **Best Epoch (118)** | Training Accuracy | 0.960970 |
+|  | Training Loss | 0.133093 |
+|  | Eval Accuracy | **0.870204** |
+|  | Eval Loss | 0.606984 |
+|  | Eval Avg Class IoU | 0.707422 |
+|  | Eval Avg Class Accuracy | 0.823969 |
+| **Per-Class IoU** | bathtub | 0.847 |
+|  | bed | 0.864 |
+|  | chair | 0.838 |
+|  | desk | 0.463 |
+|  | dresser | 0.471 |
+|  | monitor | 0.794 |
+|  | night_stand | 0.512 |
+|  | sofa | 0.847 |
+|  | table | 0.636 |
+|  | toilet | 0.854 |
 
 
 
