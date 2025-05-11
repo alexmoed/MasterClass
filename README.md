@@ -44,3 +44,6 @@ Click the image above to view a demo video showing the SAM2 Video segmentation a
 ![3D Gaussian Splatting Chair Rendering](PostShot_3DGS_results/chair_3DGS.png)
 
 3DGS created from matted SAM2Video image sequences using Postshot.
+
+## Aknowlegements 
+https://github.com/facebookresearch/sam2
