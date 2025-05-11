@@ -19,7 +19,7 @@ This repository implements Jurski's method, which applies PointNet++ to semantic
 
 Here are the results of this method in Houdini (click on image to play video)
 
-## Implementation Details
+### Implementation Details
 
 In implementing Jurski's method, I've added several practical enhancements:
 
@@ -40,9 +40,10 @@ In implementing Jurski's method, I've added several practical enhancements:
 - TensorBoard
 - PyTorch3D (specific Meta repository version)
 
-# Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 
-# Install PyTorch3D from Meta repository (required specific version)
-# This step may take 20+ minutes
-pip install "git+https://github.com/facebookresearch/pytorch3d.git"
+Acknowledgments
+
+Based on 
+https://github.com/karol-202/direct-3dgs-segmentation
