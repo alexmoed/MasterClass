@@ -44,5 +44,5 @@ https://storage.googleapis.com/anmstorage/Master_class/Chair_splat_dataset.zip
 ### Acknowledgments
 
 - Based on SAM2 from Meta Research: https://github.com/facebookresearch/sam2
-- Uses MatAnyone technology: https://matanyone.com/
+- Uses MatAnyone Method: https://matanyone.com/
 - Thanks to VisualSkies for providing test data
