@@ -63,6 +63,11 @@ In implementing Jurski's method, I've added several practical enhancements:
 |  | table | 0.636 |
 |  | toilet | 0.854 |
 
+## Dataset
+Download the dataset from:
+https://data.4tu.nl/datasets/3eabd3f5-d814-48be-bbff-b440f2d48a2b
+*Important: Do not use "Download all files"! Download each category separately and place in the dataset folder (276 GB total).*
+The dataset folder structure should be organized as follows:
 
 
 ## Acknowledgments
