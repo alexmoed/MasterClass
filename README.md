@@ -1,6 +1,6 @@
 # SpatialLM Point Cloud Classifier/Segmentation 
 
-This repository contains scripts for processing and classifying 3D point clouds using SpatialLM, a large language model-based approach to understanding 3D scenes. It has been adapted for point cloud segmentation. 
+This repository contains scripts for processing and classifying 3D point clouds using SpatialLM, a large language model-based approach to understanding 3D scenes. It has been adapted from Llama (Meta) through fine-tuning specifically for point cloud segmentation and scene understanding tasks.
 
 ## Method Overview
 
