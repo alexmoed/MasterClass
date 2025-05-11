@@ -28,22 +28,9 @@ In implementing Jurski's method, I've added several practical enhancements:
 3. **Visualization Pipeline**: At 50-epoch intervals (or a value you choose), the system generates PLY files showing segmentation results that can be viewed in standard 3D software.
 4. **Training Improvements**: Implemented optimizations that accelerated training convergence, achieving 68% evaluation accuracy in just 30 epochs when including opacity features.
 
-## Installation and Setup
 
-### Requirements
 
-- Python 3.7+
-- PyTorch 1.8+
-- NumPy
-- Pandas
-- tqdm
-- TensorBoard
-- PyTorch3D (specific Meta repository version)
-
-### Install dependencies
-pip install -r requirements.txt
-
-Acknowledgments
+## Acknowledgments
 
 Based on 
 https://github.com/karol-202/direct-3dgs-segmentation
