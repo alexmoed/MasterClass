@@ -1,6 +1,11 @@
+
 ## SAM2-MatAnyone Integration Pipeline
 
 This pipeline creates an integration between SAM2 mask prediction and MatAnyone for mask propagation across video frames. The system automatically passes masks and paths between components for video object segmentation. At the time of starting this method, it was not available and it was suggested to use a SAM2 demo online, download the files, and upload to MatAnyone. I streamlined this process.
+
+## About MatAnyone
+
+MatAnyone is a mask-agnostic approach for video matting released in March 2025. It offers a flexible workflow in which providing a mask for the first frame allows automatic propagation across all subsequent frames in a sequence. The method was originally designed for human subjects. This approach is particularly effective at extracting fine details and maintaining consistency with human subjects, but struggles with inanimate objects, as shown in testing.
 
 ### Pipeline Overview
 
@@ -35,3 +40,9 @@ https://storage.googleapis.com/anmstorage/Master_class/Chair_splat_dataset.zip
 [![MatAnyone Fail Thumbnail](https://storage.googleapis.com/anmstorage/Master_class/matanyone_fail.0122.png)](https://storage.googleapis.com/anmstorage/Master_class/matanyone_fail.mp4)
 
 (Click on photo to watch video)
+
+### Acknowledgments
+
+- Based on SAM2 from Meta Research: https://github.com/facebookresearch/sam2
+- Uses MatAnyone technology: https://matanyone.com/
+- Thanks to VisualSkies for providing test data
