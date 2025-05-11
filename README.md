@@ -47,7 +47,7 @@ This repository contains multiple approaches to segment Gaussian splats, providi
 - Variable performance between model variants (Qwen-0.5B better for furniture, Llama-1B better for structural elements)
 - Occasional omission of primary objects
 - Bounding box accuracy limitations
-
+ -Designed and trained on indoor environments only
 **Implementation Notes**:
 - Point extraction from bounding boxes implemented with Open3D
 - Generates a Classified PLY file 
@@ -66,7 +66,9 @@ This repository contains multiple approaches to segment Gaussian splats, providi
 - Needs a fixed number of points (Current implementations uniform sampling limiting objects to 4096-1288 points) or a number of your choosing. 
 - Dataset-specific implementation 
 - Appears to memorise specific examples rather than learning generalizable features
-
+- performs well on test data but may struggle with new objects
+- Takes hours to label the current dataset
+  
 **Implementation Notes**:
 - Includes sampling, grouping, and feature extraction layers
 - Pandas-based solution implemented for path management
@@ -129,3 +131,5 @@ This repository contains multiple approaches to segment Gaussian splats, providi
 - **GSOPS (Gaussian Splat Operators)**: While not part of this repository, GSOPS is a Houdini plugin that was used during testing to visualize and refine segmentation results. It provides functionality for viewing and filtering splat attributes, performing clean-up operations, and classifying splats using built-in methods like DBSCAN. https://github.com/david-rhodes/GSOPs
 
 - **PostShot**: Used for generating Gaussian splats from image sequences with the alpha channel masks created by the 2D-based methods in this repository.
+
+
