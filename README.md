@@ -69,5 +69,12 @@ A sample model is located at: `pcd/scene0061_00.ply`
 ## Demo
 [![Video Title](Media/spatial_LM_screenshot.PNG)](https://storage.googleapis.com/anmstorage/Master_class/SpatialLM_turntable_render.mp4)
 click image to view video
+
+##Acknowledgments
+
+Based on SpatialLM GitHub repository
+Thanks to VisualSkies for providing test data
+
+
 ## Test dataset
 https://drive.google.com/file/d/1gqn8mt2rC6o_Z3PVH7jODeeQrg_svDec/view?usp=sharing
