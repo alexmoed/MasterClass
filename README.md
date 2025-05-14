@@ -34,7 +34,7 @@ The implementation included solutions for orientation inconsistencies where fram
 
 Despite the pipeline functioning correctly from a technical integration standpoint, the underlying approach proved unsuitable for our Gaussian splat preparation needs. Testing showed the SAM2Video method to be a more effective alternative for our specific requirements.
 # Dataset:
-https://storage.googleapis.com/anmstorage/Master_class/Chair_splat_dataset.zip
+See txt file with submission
 # Example broken output video: 
 
 [![MatAnyone Fail Thumbnail](https://storage.googleapis.com/anmstorage/Master_class/matanyone_fail.0122.png)](https://storage.googleapis.com/anmstorage/Master_class/matanyone_fail.mp4)
