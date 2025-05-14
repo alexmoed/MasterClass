@@ -57,3 +57,5 @@ Click the image above to view a demo video showing the SAM2 Video segmentation a
 
 ## Aknowlegements 
 Based on https://github.com/facebookresearch/sam2
+# Dataset:
+See txt file with submission
